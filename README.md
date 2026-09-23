@@ -42,60 +42,9 @@ This lab is designed to simulate the type of environment an entry-level IT Suppo
 
 The domain contains the following Organizational Units:
 
-```text
+```
 DIAZCRUZ.LOCAL
 │
-Security Groups
-
-The following security groups were created:
-
-Company-Wide
-All-Employees
-HR
-HR-Users
-HR-Managers
-IT
-IT-Users
-IT-Admins
-IT-Managers
-Warehouse
-Warehouse-Users
-Warehouse-Managers
-Sales
-Sales-Users
-Sales-Managers
-
-These groups are used to simulate role-based access management within the organization.
-
-User Management
-
-The lab currently contains 25 fictional employee accounts distributed across four departments:
-
-HR
-IT
-Warehouse
-Sales
-
-User accounts were created with standardized usernames and assigned to their appropriate departmental OUs and security groups.
-
-Active Directory Administration Tasks
-
-Hands-on tasks completed or planned in this lab include:
-
-Creating user accounts
-Creating Organizational Units
-Creating security groups
-Adding users to security groups
-Enabling disabled accounts
-Resetting user passwords
-Requiring password changes at next logon
-Troubleshooting authentication issues
-Managing departmental organization
-DNS troubleshooting
-Domain administration
-DNS Troubleshooting
-
-During initial server configuration, DNS resolution was tested using:
 ├── HR
 ├── IT
 ├── Warehouse
@@ -103,16 +52,95 @@ During initial server configuration, DNS resolution was tested using:
 ├── Computers
 ├── Service Accounts
 └── Groups
+```
+
+
+## Security Groups
+
+The following security groups were created:
+
+### Company-Wide
+
+- All-Employees
+
+### HR
+
+- HR-Users
+- HR-Managers
+
+### IT
+
+- IT-Users
+- IT-Admins
+- IT-Managers
+
+### Warehouse
+
+- Warehouse-Users
+- Warehouse-Managers
+
+### Sales
+
+- Sales-Users
+- Sales-Managers
+
+These groups are used to simulate role-based access management within the organization.
+
+---
+
+## User Management
+
+The lab currently contains 25 fictional employee accounts distributed across four departments:
+
+- HR
+- IT
+- Warehouse
+- Sales
+
+User accounts were created with standardized usernames and assigned to their appropriate departmental OUs and security groups.
+
+---
+
+## Active Directory Administration Tasks
+
+Hands-on tasks completed or planned in this lab include:
+
+- Creating user accounts
+- Creating Organizational Units
+- Creating security groups
+- Adding users to security groups
+- Enabling disabled accounts
+- Resetting user passwords
+- Requiring password changes at next logon
+- Troubleshooting authentication issues
+- Managing departmental organization
+- DNS troubleshooting
+- Domain administration
+
+---
+
+## DNS Troubleshooting
+
+During initial server configuration, DNS resolution was tested using:
+
+```text
 ping 8.8.8.8
 ping google.com
 nslookup google.com
-Testing connectivity by IP address and hostname helped distinguish between general network connectivity and DNS resolution problems.
 ipconfig /flushdns
-Help Desk Integration
+```
+
+Testing connectivity by IP address and hostname helped distinguish between general network connectivity and DNS resolution problems.
+
+---
+
+## Help Desk Integration
 
 This Active Directory environment is being integrated with a separate Jira Service Management help desk simulation.
 
 The purpose is to practice the complete IT support workflow:
+
+```text
 User reports problem
         ↓
 Help Desk receives ticket
@@ -128,8 +156,13 @@ Verify resolution
 Document work
         ↓
 Resolve ticket
-Example Support Scenario
-Account Access Issue
+```
+
+---
+
+## Example Support Scenario
+
+### Account Access Issue
 
 A simulated HR employee was unable to log into Windows and received an error indicating that the account may be locked out.
 
@@ -141,57 +174,62 @@ The user's password was subsequently reset and the user was required to create a
 
 The user successfully logged into Windows and confirmed that access had been restored.
 
-Skills Demonstrated
-Active Directory user investigation
-Account status verification
-Account re-enablement
-Password reset
-Authentication troubleshooting
-User communication
-Ticket documentation
-Resolution verification
-Planned Lab Exercises
+### Skills Demonstrated
+
+- Active Directory user investigation
+- Account status verification
+- Account re-enablement
+- Password reset
+- Authentication troubleshooting
+- User communication
+- Ticket documentation
+- Resolution verification
+
+---
+
+## Planned Lab Exercises
 
 Future exercises will include:
 
-Creating a Windows 11 client VM
-Joining a Windows 11 client to the domain
-Creating Group Policy Objects (GPOs)
-Applying departmental policies
-Testing user permissions
-File and folder access control
-Account lockout troubleshooting
-Password policy configuration
-Software deployment concepts
-Printer troubleshooting
-Network troubleshooting
-Help desk ticket simulations
-Windows client troubleshooting
-Tools Used
-Windows Server
-Oracle VirtualBox
-Active Directory Users and Computers
-DNS Manager
-Server Manager
-Command Prompt
-PowerShell
-Jira Service Management
-Project Goals
+- Creating a Windows 11 client VM
+- Joining a Windows 11 client to the domain
+- Creating Group Policy Objects (GPOs)
+- Applying departmental policies
+- Testing user permissions
+- File and folder access control
+- Account lockout troubleshooting
+- Password policy configuration
+- Software deployment concepts
+- Printer troubleshooting
+- Network troubleshooting
+- Help desk ticket simulations
+- Windows client troubleshooting
+
+---
+
+## Tools Used
+
+- Windows Server
+- Oracle VirtualBox
+- Active Directory Users and Computers
+- DNS Manager
+- Server Manager
+- Command Prompt
+- PowerShell
+- Jira Service Management
+
+---
+
+## Project Goals
 
 The primary goal of this project is to develop practical experience with common IT support and system administration tasks in a controlled lab environment.
 
 This project is continuously being expanded with new troubleshooting scenarios, documentation, and simulated business requirements.
 
-Disclaimer
+---
+
+## Disclaimer
 
 This is a personal educational lab using fictional users and simulated company data.
 
 No real customer, employee, password, or confidential company information is stored in this repository.
-
-
-At the bottom of the GitHub editor:
-
-**Commit message:**
-
-```text
-Initial documentation of Windows Server Active Directory lab
