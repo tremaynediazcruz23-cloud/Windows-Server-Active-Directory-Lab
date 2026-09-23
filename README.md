@@ -42,17 +42,18 @@ This lab is designed to simulate the type of environment an entry-level IT Suppo
 
 The domain contains the following Organizational Units:
 
-```
+
 DIAZCRUZ.LOCAL
-│
+|---|
 ├── HR
 ├── IT
 ├── Warehouse
 ├── Sales
 ├── Computers
 ├── Service Accounts
-└── Groups
-```
+├── Groups
+
+
 
 
 ## Security Groups
@@ -86,7 +87,7 @@ The following security groups were created:
 
 These groups are used to simulate role-based access management within the organization.
 
----
+
 
 ## User Management
 
@@ -99,7 +100,7 @@ The lab currently contains 25 fictional employee accounts distributed across fou
 
 User accounts were created with standardized usernames and assigned to their appropriate departmental OUs and security groups.
 
----
+
 
 ## Active Directory Administration Tasks
 
@@ -117,22 +118,23 @@ Hands-on tasks completed or planned in this lab include:
 - DNS troubleshooting
 - Domain administration
 
----
+
 
 ## DNS Troubleshooting
 
 During initial server configuration, DNS resolution was tested using:
 
-```text
-ping 8.8.8.8
-ping google.com
-nslookup google.com
-ipconfig /flushdns
-```
+ ping 8.8.8.8<br>
+ ping google.com<br>
+ nslookup google.com<br>
+ipconfig /flushdns<br>
+
+  
+
 
 Testing connectivity by IP address and hostname helped distinguish between general network connectivity and DNS resolution problems.
 
----
+
 
 ## Help Desk Integration
 
@@ -140,25 +142,26 @@ This Active Directory environment is being integrated with a separate Jira Servi
 
 The purpose is to practice the complete IT support workflow:
 
-```text
-User reports problem
-        ↓
-Help Desk receives ticket
-        ↓
-Troubleshoot issue
-        ↓
-Investigate Active Directory
-        ↓
-Make appropriate change
-        ↓
-Verify resolution
-        ↓
-Document work
-        ↓
+<center>
+User reports problem<br>
+        ↓<br>
+Help Desk receives ticket<br>
+        ↓<br>
+Troubleshoot issue<br>
+        ↓<br>
+Investigate Active Directory<br>
+        ↓<br>
+Make appropriate change<br>
+        ↓<br>
+Verify resolution<br>
+        ↓<br>
+Document work<br>
+        ↓<br>
 Resolve ticket
-```
+</center>
 
----
+
+
 
 ## Example Support Scenario
 
@@ -185,7 +188,7 @@ The user successfully logged into Windows and confirmed that access had been res
 - Ticket documentation
 - Resolution verification
 
----
+
 
 ## Planned Lab Exercises
 
@@ -205,7 +208,7 @@ Future exercises will include:
 - Help desk ticket simulations
 - Windows client troubleshooting
 
----
+
 
 ## Tools Used
 
@@ -218,7 +221,7 @@ Future exercises will include:
 - PowerShell
 - Jira Service Management
 
----
+
 
 ## Project Goals
 
@@ -226,7 +229,7 @@ The primary goal of this project is to develop practical experience with common 
 
 This project is continuously being expanded with new troubleshooting scenarios, documentation, and simulated business requirements.
 
----
+
 
 ## Disclaimer
 
