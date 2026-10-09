@@ -29,8 +29,8 @@ This lab is designed to simulate the type of environment an entry-level IT Suppo
 |---|---|
 | Hypervisor | Oracle VirtualBox |
 | Server OS | Windows Server |
-| Domain | `DIAZCRUZ.LOCAL` |
-| Domain Controller | `Diaz-Cruz2026` |
+| Domain | DIAZCRUZ.LOCAL |
+| Domain Controller | Diaz-Cruz2026 |
 | Directory Service | Active Directory Domain Services |
 | DNS | Windows Server DNS |
 | Departments | HR, IT, Warehouse, Sales |
